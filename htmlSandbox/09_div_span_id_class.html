@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>div & span, id & class</title>
+</head>
+<style>
+  .card{
+    padding: 20px 10px ;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    margin: 10px 0px;
+  }
+  .enhanced{
+    color: yellow;
+    background-color: grey;
+  }
+</style>
+<body>
+  <div id="main-header" class="card">
+    <h1>Welcome</h1>
+    <p>this is a crappy website</p>
+  </div>
+  <ul id="main-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <!--Emmet: "#about + Enter" -->
+  <div id="about" class="card">
+    <h3>About:</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, temporibus. Nesciunt, illo cupiditate, consectetur ut blanditiis molestias <span class="enhanced">ex beatae dolor incidunt dolore eaque repudiandae distinctio.</span> Placeat quos minima neque rerum quae harum eos tempora assumenda deleniti esse nisi sequi vel, id hic in amet laboriosam alias possimus illo. Corrupti, atque!</p>
+  </div>
+  <div id="contact" class="card">
+    <h3>Contact Info:</h3>
+    <ul>
+      <li>Address: Berlin, Germany</li>
+      <li>Phone: 333-666-999</li>
+      <li>Email: someone@server.com</li>
+    </ul>
+  </div>
+  <div id="footer">
+    <p>Copyright &copy; 2020</p>
+  </div>
+
+</body>
+</html>
