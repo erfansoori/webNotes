@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Float & Alignment</title>
+  <style>
+    *{
+      box-sizing: border-box;/*so that the paddings wont creat issues when we're floating*/
+    }
+    /*for clearig the flaot*/
+    .clr {
+      clear: both;
+    }
+    .container{
+      /*width: 960px;/*
+      /*this kind of sizing will destroy responsiveness so we do like these two lines below:*/ 
+
+      max-width: 960px;/*now if the screen is bigger than 960 then it will be 960 and for smaler sizes the width is automatically set to window size*/
+
+      margin: 60px auto;
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+
+    .box{
+      background-color: #f4f4f4;
+      border: 1px solid #777;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    .box p{
+      /*text align*/
+      text-align: left;
+      text-align: right;
+      text-align: center;
+      text-align: justify ;
+    }
+    #box-2{
+      float: left;
+      width: 68%;
+    }
+    #box-3{
+      float: right;
+      width: 30%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corporis laborum dolorum nam quo, quas aperiam error iusto non dolore!</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corporis laborum dolorum nam quo, quas aperiam error iusto non dolore!</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corporis laborum dolorum nam quo, quas aperiam error iusto non dolore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sapiente? Ratione aut amet earum voluptatibus illum maxime, nulla quod atque molestias suscipit corporis consectetur fugiat doloremque exercitationem vitae blanditiis! Dolor doloribus id aliquid officiis quam eveniet, natus expedita tempora, sequi officia optio voluptas tempore sunt in, reiciendis est exercitationem aperiam.</p>
+    </div>
+    <div class="clr"></div>
+    <div id="box-4" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corporis laborum dolorum nam quo, quas aperiam error iusto non dolore!</p>
+    </div>
+  </div>
+  
+</body>
+</html>
