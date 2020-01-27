@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box Model / Margin & Padding</title>
+  <style>
+    /* CSS Reset --- there are many things that can be reset --- here we reset the margin and padding*/
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .box{
+
+      /* notice that any setting overrides the previous one if there's a conflict*/
+
+
+      background-color: #f4f4f4;
+      border: 3px solid #777;
+      width: 500px;
+      /*padding to all sides*/
+      padding: 120px;/*it is considered part of the box and if it increaces then the size of the box is increaced too unless box-sizing property is set to 'border-box' , in that case the padding os not added to the size and it is taken from the space inside the box instead*/
+
+      /*per side:*/
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+
+      /*padding shorthand top-right bottom left (clockwise)*/
+      padding:10px 20px 10px 20px;
+
+      /*padding shorter top/bot r/l*/
+      padding: 10px 20px;
+      
+      
+      /*margin to all sides*/
+      margin: 20px;/*the size of the box doesn't change... it just adds space around it*/
+
+      /*per side:*/
+      margin: 10px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+
+      /*margin shorthand top-right bottom left (clockwise)*/
+      margin:10px 20px 10px 20px;
+
+      /*margin shorter top/bot r/l*/
+      margin: 10px 20px;
+    }
+
+
+    .box h3{
+      padding-bottom: 10px;
+    } 
+  </style>
+</head>
+<body>
+   <div class="box">
+     <h3>Box One</h3>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed praesentium quidem accusantium veniam tempore vel suscipit neque doloremque ratione error?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed praesentium quidem accusantium veniam tempore vel suscipit neque doloremque ratione error?</p>
+    </div>
+  <div class="box">
+    <h3>Box Two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed praesentium quidem accusantium veniam tempore vel suscipit neque doloremque ratione error?</p>
+  </div>
+</body>
+</html>
