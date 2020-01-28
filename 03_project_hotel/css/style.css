@@ -5,7 +5,13 @@
   box-sizing: border-box;
 }
 
-/*main stying*/
+/* utilities */
+#container{
+  max-width: 1300px;
+  margin: auto;
+}
+
+/*main styling*/
 
 body,html{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,6 +34,7 @@ p {
 #navbar {
   background-color: #333;
   overflow: auto;
+  
 }
 
 /* #navbar *{
@@ -39,7 +46,7 @@ p {
 
 #logo{
   float: left;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 #navbar ul{
@@ -58,4 +65,13 @@ p {
   display: block;
   text-align: center;
 }
- 
+
+#navbar ul li a:hover{
+  color: #F7C08A;
+  background-color: #444444;
+}
+
+.current{
+  color: #F7C08A !important;
+  background-color: #444444;
+}
