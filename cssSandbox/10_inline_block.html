@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inline & Block Styling</title>
+  <style>
+    li{
+      display: inline;
+      
+    }
+    li a{
+      padding: 0 10px;
+      
+    }
+
+    img{
+      display: block;
+      margin: auto;
+    }
+    
+    /* .box{
+      background-color: #8a8585;
+      width: 32%;
+      float: left;
+      display: inline;
+      margin: 10px;
+
+    } */
+
+    .box{
+      background-color: #8a8585;
+      width: 32%;
+      display: inline-block;
+      margin: 10px;/*in lower screen sizes or reslutions the last one might fall down*/
+      /* margin: 0.5%;  this is a good idea if we wanted to put all of these three dics in the same row*/
+      box-sizing: border-box;
+
+
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Researches</a></li>
+    <li><a href="#">Funding</a></li>
+  </ul>
+
+  <br><br>
+
+  <img src="./img/leaf.png" alt="leaf image">
+
+  <div class="box">
+    <h1>heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, soluta minima? Consequuntur reiciendis aliquam libero perspiciatis nostrum accusantium perferendis excepturi!</p>
+  </div>
+  <div class="box">
+    <h1>heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, soluta minima? Consequuntur reiciendis aliquam libero perspiciatis nostrum accusantium perferendis excepturi!</p>
+  </div>
+  <div class="box">
+    <h1>heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, soluta minima? Consequuntur reiciendis aliquam libero perspiciatis nostrum accusantium perferendis excepturi!</p>
+  </div>
+
+</body>
+</html>
