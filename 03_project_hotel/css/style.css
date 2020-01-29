@@ -11,6 +11,57 @@
   margin: auto;
 }
 
+.lead{
+  font-size: 20px;
+  line-height: 1.7em;
+}
+.text-primary{
+  color: #F7C08A;
+}
+
+.btn-dark{
+  color: #fff;
+  background-color: #333;
+  padding: 13px 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-dark:hover{
+  color: #333;
+  background-color: #F7C08A;
+}
+
+.btn-light{
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 13px 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-light:hover{
+  color: #333;
+  background-color: #F7C08A;
+}
+
+.bg-dark{
+  background-color: #333;
+  color: #fff;
+}
+
+
+.bg-light{
+  background-color: #fff;
+  color: #333;
+}
+
+
+.bg-primary{
+  background-color: #F7C08A;
+  color: #333;
+}
+
 /*main styling*/
 
 body,html{
@@ -74,4 +125,48 @@ p {
 .current{
   color: #F7C08A !important;
   background-color: #444444;
+}
+
+/* Showcase */
+#showcase{
+ background: url('../img/showcase.jpg') no-repeat center center/cover; 
+ height: 700px;
+}
+
+#showcase #showcase-content{
+  text-align: center;
+  color: #fff;
+  padding-top: 200px;
+}
+#showcase #showcase-content h1{
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+#showcase #showcase-content p{
+  padding-bottom: 20px;
+}
+
+/* home Main Section */
+#home-info{/* why we couldn't create this without  this particular styling?*/
+  height: 400px;
+}
+
+#home-info #info-image{
+  background: url('../img/photo-1.jpg');
+  float: left;
+  min-height: 100%;
+  width: 50%;
+}
+
+#home-info #info-content{
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  padding: 50px 30px;
+  overflow: hidden;
+  float: right;
+}
+#home-info #info-content p{
+  padding-bottom: 20px;
 }
