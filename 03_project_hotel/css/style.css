@@ -245,6 +245,10 @@ p {
   
 }
 
+#about-info #info-text h1{
+  font-size: 30px;
+
+}
 #about-info #info-picture{
  
   float: right;
@@ -264,12 +268,14 @@ p {
 #about-comments{
   background: url('../img/test-bg.jpg') no-repeat center center /cover;
   overflow: hidden;
+  padding: 100px;
 }
 
 #about-comments h1{
-  margin: 80px 50px 0 0 ;
-  font-size: 40px;
+  font-size: 50px;
+  padding-bottom: 40px;
   text-align: center;
+  
 }
 #about-comments .about-guest {
 
