@@ -38,6 +38,7 @@
   padding: 13px 20px;
   cursor: pointer;
   border: none;
+  font-size: 18px;
 }
 
 .btn-dark:hover{
@@ -247,7 +248,10 @@ p {
 
 #about-info #info-text h1{
   font-size: 30px;
-
+  float: left;
+}
+#about-info #info-text p{
+  float: left;
 }
 #about-info #info-picture{
  
@@ -301,12 +305,48 @@ p {
 
 #about-comments .about-guest .guest-comment{
   font-size: 18px;
-
 }
 
 
 
+
+
+/*Contact Page*/
+
+#contact-form h1{
+  font-size: 40px;
+  padding: 20px 0;
+
+  
+}
+
+#contact-form{
+  margin-bottom: 30px;
+  font-size: 18px;
+
+}
+.form-group{
+  margin-bottom: 25px;
+}
+
+.form-group label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea{
+  width: 100%;
+  padding: 9px;
+  border: 1px #ddd solid;
+  font-size: 17px;
+}
+
+.form-group input:focus, .form-group textarea:focus{
+  outline: none;
+  border-color: #F7C08A;
+}
  
+
 /* footer */
 #home-footer{
   clear: both;
