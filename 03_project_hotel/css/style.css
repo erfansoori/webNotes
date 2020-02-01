@@ -346,13 +346,24 @@ p {
   border-color: #F7C08A;
 }
  
-
+#contact-info{
+  margin: 0;
+  height: 300px;
+}
+#contact-info .contact-info-detail{
+  float: left;
+  width: 33%;
+  height: 100%;
+  text-align: center;
+  margin: 70px 0px;
+  
+}
 /* footer */
 #home-footer{
   clear: both;
   text-align: center;
-  color: #fff;
-  padding: 30px 20px;
+  color: #f4f4f4;
+  padding: 30px 20px; 
   background-color: #444;
   
 }
