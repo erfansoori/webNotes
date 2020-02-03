@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vh & vw units</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header{
+      background: #333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
+      color: white;
+      height: 100vh;/* vh is perfect for landing pages because it only takes the complete height of the current browser height and if you scroll without resizing , you'll see other content*/
+      text-align: center;
+      padding: 2rem;
+      padding-top: 35vh;
+    }
+    header h1{
+      font-size: 3rem;
+    }
+    p{
+      margin: 1rem 0;
+    }
+    .btn{
+      display: inline-block;
+      background-color: #f4f4f4;
+      padding: 0.75rem 2rem;
+      color: #333;
+      text-decoration: none;
+    }
+    section{
+      padding: 2rem;
+    }
+    @media (max-height:8rem){
+      header{
+        padding-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to our website</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quae, nulla sapiente qui voluptatibus nihil.</p>
+    <a href="#" class="btn">find out more</a>
+  </header>
+  <section>
+    <h3>About Our Company</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolor adipisci perferendis quaerat eius! Consectetur deserunt quos cupiditate neque libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus dolores, illo voluptatum dicta labore iste ab assumenda minus quo magnam quidem repellat totam consequatur omnis nostrum quas obcaecati in excepturi?</p>
+  </section>
+</body>
+</html>
