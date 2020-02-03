@@ -1,0 +1,103 @@
+#logo{
+  float: none;
+  text-align: center;
+}
+
+#navbar ul , #navbar ul li{
+  float: none;
+  padding: 5px ;
+}
+#navbar ul li{
+  border-bottom: #444 dotted 1px;
+
+}
+#navbar ul li a{
+  padding: 5px ;
+}
+#home-info{
+  height: auto;
+}
+#home-info #info-image{
+  display: none;
+}
+#home-info #info-content{
+  text-align: center;
+  width: 100%;
+  
+  padding: 50px 30px;
+  overflow: hidden;
+  
+}
+
+#home-features{
+  height: auto;
+}
+.home-feature{
+  float: none;
+  width: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#contact-info{
+  height: auto;
+}
+#contact-info .contact-info-detail{
+  float: none;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0px;
+  margin: 0;
+}
+
+/* About */
+#about-info #info-text{
+  float: none;
+  margin: auto;
+  width: 100%;
+  text-align: justify;
+  
+}
+
+#about-info #info-text h1{
+  font-size: 30px;
+  float: none;
+}
+#about-info #info-text p{
+  float: none;
+}
+#about-info #info-picture{
+  margin: auto;
+  float: none;
+  width: 100%;
+
+  
+}
+
+#about-info #info-picture img{
+  display: block;
+  margin: auto;
+  border-radius: 60%;
+}
+
+
+#about-comments h1{
+  font-size: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+  
+  
+}
+
+
+#about-comments{
+  padding: 40px 0;
+}
+
+/* container */
+.container{
+  max-width: 1300px;
+  padding: 40px 20px;
+  
+}
