@@ -3,19 +3,27 @@
   text-align: center;
 }
 
+#navbar .container{
+  padding: 0;
+}
 #navbar ul , #navbar ul li{
   float: none;
-  padding: 5px ;
+  padding: 0 10px ;
 }
 #navbar ul li{
   border-bottom: #444 dotted 1px;
 
 }
 #navbar ul li a{
-  padding: 5px ;
+  padding: 3px ;
 }
 #home-info{
   height: auto;
+}
+#showcase #showcase-content{
+  text-align: center;
+  color: #fff;
+  padding-top: 100px;
 }
 #home-info #info-image{
   display: none;
@@ -52,7 +60,7 @@
 }
 
 /* About */
-#about-info #info-text{
+#about-info #info-text ,#about-info #info-picture{
   float: none;
   margin: auto;
   width: 100%;
@@ -63,21 +71,16 @@
 #about-info #info-text h1{
   font-size: 30px;
   float: none;
+  text-align: center;
 }
 #about-info #info-text p{
   float: none;
 }
-#about-info #info-picture{
-  margin: auto;
-  float: none;
-  width: 100%;
 
-  
-}
 
 #about-info #info-picture img{
   display: block;
-  margin: auto;
+  margin-top: 40px;
   border-radius: 60%;
 }
 
