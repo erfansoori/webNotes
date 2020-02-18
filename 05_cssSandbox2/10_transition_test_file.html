@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My tests and experiments</title>
+    <style>
+        body{
+            background-color: tan;
+        }
+        #box{
+            height: 250px;
+            width: 630px;
+            display: inline-block;
+            background-color: #333;
+            transition: transform 1s cubic-bezier(0, 0.47, 0.32, 1.97) ;
+            pointer-events: none; /*this causes the events on this element (like clicks and hover) unable to apply changes to style of the element*/
+        }
+
+        #trigger{
+            border: gray solid 10px;
+            /* display: inline-block; */
+            height: 250px;
+            width: 630px;
+            background-color: #999;
+        }
+        #trigger.clicked #box/*, #trigger:hover #box*//*, #box:hover*/{ /* the reason why we don't need the other selector is that when the tringger has a transform property then the child(#box) has it to... it is inheritance, otherwise we would have to add it in order to have the same effect when hovering the #box itself*/ 
+        /*we offloaded the hover state to a parrent element(#trigger) so that when  we move the cursor in the original position of the #box we wouldn't have that redundant back and forth movement*/
+            /* transition: all 1s ease-in ; */
+            transform: scale(1.5) translate(300px,300px) rotate(25deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="trigger">
+        <div id="box"  >
+
+        </div><div id="box"  >
+
+        </div><div id="box"  >
+
+        </div><div id="box"  >
+
+        </div><div id="box"  >
+
+        </div> 
+    </div>
+    <script 
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script>
+        $('#trigger').on('click', function(){
+            $(this).toggleClass('clicked');
+        });
+    </script>
+</body>
+</html>
