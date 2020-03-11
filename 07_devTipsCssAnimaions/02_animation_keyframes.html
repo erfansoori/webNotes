@@ -19,15 +19,15 @@
             width: 200px;
             height: 200px;
             position: relative;
-            animation: myframes 3s ease-in-out 2s infinite /*reverse*/alternate forwards /*paused*/;
+            animation: myframes 3s ease-in-out 2s 5 /*reverse*/alternate forwards /*paused*/;
 
         }
 
         /*pause:*/
         @keyframes myframes {
-            0%{
-
-            }
+            /* if it's empty then it doesnt exist */
+            /* 0%{
+            } */
             30% , 70% {
                 height: 500px;
             }
@@ -55,6 +55,11 @@
         .is-paused{
             animation-play-state: paused;
         }
+        .box:hover{
+            animation-play-state: paused;
+        }
+
+        
         /*creating animations by introducing new elements to page*/
         .box2{
             background: pink;
